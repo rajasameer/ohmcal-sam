@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Ohm Calculator</h1>
+    <p class="lead">Please select the colors for the band</p>
+</div>
+
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"> Band A </th>
+                <th scope="col"> Band B </th>
+                <th scope="col"> Band C </th>
+                <th scope="col"> Band D </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                
+                <td>
+                    <select id="col1" name="colA">
+                        <option class="black" value=0 selected="selected">Black</option>
+                        <option class="brown" value=1>Brown</option>
+                        <option class="red" value=2>Red</option>
+                        <option class="orange" value=3>Orange</option>
+                        <option class="yellow" value=4>Yellow</option>
+                        <option class="green" value=5>Green</option>
+                        <option class="blue" value=6>Blue</option>
+                        <option class="violet" value=7>Violet</option>
+                        <option class="grey" value=8>Grey</option>
+                        <option class="white" value=9>White</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="col2" name="colB">
+                        <option class="black" value=0 selected="selected">Black</option>
+                        <option class="brown" value=1>Brown</option>
+                        <option class="red" value=2>Red</option>
+                        <option class="orange" value=3>Orange</option>
+                        <option class="yellow" value=4>Yellow</option>
+                        <option class="green" value=5>Green</option>
+                        <option class="blue" value=6>Blue</option>
+                        <option class="violet" value=7>Violet</option>
+                        <option class="grey" value=8>Grey</option>
+                        <option class="white" value=9>White</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="col3" name="colC">
+                        <option class="black" value=0 selected="selected">Black</option>
+                        <option class="brown" value=1>Brown</option>
+                        <option class="red" value=2>Red</option>
+                        <option class="orange" value=3>Orange</option>
+                        <option class="yellow" value=4>Yellow</option>
+                        <option class="green" value=5>Green</option>
+                        <option class="blue" value=6>Blue</option>
+                        <option class="violet" value=7>Violet</option>
+                        <option class="grey" value=8>Grey</option>
+                        <option class="white" value=9>White</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="col4" name="colD">
+                        <option value=20 selected="selected">None</option>
+                        <option class="brown" value=1>Brown</option>
+                        <option class="red" value=2>Red</option>
+                        <option class="green" value=0.5>Green</option>
+                        <option class="blue" value=0.25>Blue</option>
+                        <option class="violet" value=0.10>Violet</option>
+                        <option class="grey" value=0.05>Gray</option>
+                        <option class="gold" value=5>Gold</option>
+                        <option class="silver" value=10>Silver</option>
+
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</div>
+<div id="div2">
+</div>
+<!--adding form to collect info-->
+<div>
+    <form method="post" action="/Home/About">
+  
+        <input type="hidden" name="boxA" id="boxA" />
+        <input type="hidden" name="boxB" id="boxB" />
+        <input type="hidden" name="boxC" id="boxC"/>
+        <input type="hidden" name="boxD" id="boxD"/>
+        <input type="hidden" name="boxE" id="boxE" />
+        <input type="submit" value="Calculate Ohm" id="mysubmit" class="btn btn-lg btn-success">
+    </form>
+</div>
+
+
+
+
