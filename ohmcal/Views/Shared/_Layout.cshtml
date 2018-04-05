@@ -9,21 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("button").click(function () {
-                var a = parseInt(jQuery("#col1 option:selected").val());
-                var b = parseInt(jQuery("#col2 option:selected").val());
-                var c = parseInt(jQuery("#col3 option:selected").val());
-                var d = parseInt(jQuery("#col4 option:selected").val());
-                
-                var e = (a * 10 + b) * Math.pow(10,c);
-                $('#div2').text(e);
-                var band_one = jQuery("#col1 option:selected").text();
-                var band_two = jQuery("#col2 option:selected").text();
-                var band_three = jQuery("#col3 option:selected").text();
-                var band_four = jQuery("#col4 option:selected").text();
-                
-               
-            });
+         
             $("#mysubmit").click(function () {
                 
                 var band_one = jQuery("#col1 option:selected").text();

@@ -30,12 +30,12 @@ namespace ohmcal.Tests.Controllers
         {
             // Arrange
             HomeController controller = new HomeController();
-
+           
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.About("Blue","Orange","Red","Gold",5) as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual(6300, result.ViewBag.Message);
         }
 
         [TestMethod]
